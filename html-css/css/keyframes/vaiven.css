@@ -1,0 +1,36 @@
+div{
+  font-family: 'Arial';
+  background-color: #a8cf45;
+  margin: 15px 20px;
+  position: relative;
+  padding: 5px 20px;
+  text-align: center;
+  font-weight: bolder;
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vaiven:hover{
+  -webkit-animation: 0.7s vaiven 1;
+
+}
+
+@keyframes vaiven{
+  20%{
+    transform: rotate(-10deg) translateX(-25%);
+  }
+  30%{
+    transform:  rotate(5deg) translateX(20%);
+  }
+  45%{
+    transform: rotate(-3deg) translateX(-10%);
+  }
+  60%{
+    transform: rotate(2deg) translateX(5%);
+    }
+  60%{
+    transform: rotate(-1deg) translateX(-3%);
+      }
+
+}

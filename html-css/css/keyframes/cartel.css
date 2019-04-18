@@ -1,0 +1,32 @@
+div{
+  font-family: 'Arial';
+  background-color: #a8cf45;
+  margin: 15px 20px;
+  position: relative;
+  padding: 5px 20px;
+  text-align: center;
+  font-weight: bolder;
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cartel:hover{
+  -webkit-animation: 0.7s cartel 1;
+  transform-origin: top center;
+}
+
+@keyframes cartel{
+  20%{
+    transform: rotate(15deg);
+  }
+  40%{
+    transform: rotate(-10deg);
+  }
+  60%{
+    transform: rotate(5deg);
+  }
+  80%{
+    transform: rotate(-3deg);
+  }
+}

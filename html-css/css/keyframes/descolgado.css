@@ -1,0 +1,37 @@
+div{
+  font-family: 'Arial';
+  background-color: #a8cf45;
+  margin: 15px 20px;
+  position: relative;
+  padding: 5px 20px;
+  text-align: center;
+  font-weight: bolder;
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.descolgado:hover{
+  -webkit-animation: 1s descolgado 1;
+  transform-origin: top left;
+
+}
+
+@keyframes descolgado{
+  20%, 60%{
+    transform: rotate(80deg);
+  }
+
+  40%{
+    transform:  rotate(60deg);
+  }
+  80%{
+    transform: rotate(60deg);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(400px);
+    opacity: 0;
+  }
+
+}

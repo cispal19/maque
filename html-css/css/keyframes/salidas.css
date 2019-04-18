@@ -1,0 +1,60 @@
+div{
+  font-family: 'Arial';
+  background-color: #a8cf45;
+  margin: 15px 20px;
+  position: relative;
+  padding: 5px 20px;
+  text-align: center;
+  font-weight: bolder;
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.salidas{
+  -webkit-animation: 1s salida 1;
+
+}
+
+@keyframes salida{
+  0%{
+    opacity: 1;
+    transform: translateY(50%);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+}
+
+/*
+@keyframes salida{
+  25%{
+      opacity: 1;
+    transform: scale(0.9);
+  }
+  50%{
+  opacity: 1;
+  transform: scale(1.1);
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(0)
+  }
+}
+
+
+rebote de entrada central
+@keyframes reboteIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  70%{
+    transform: translateY(0.9);
+  }
+  }*/

@@ -1,0 +1,22 @@
+div{
+  position: relative;
+  width: 100px;
+  background: #a8cf45;
+  margin: 20px 30px;
+  padding: 20px 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.click:hover{
+  -webkit-animation: 0.7s click 1;
+}
+
+@keyframes click{
+  25%, 75%{
+    transform: scale(0.8);
+  }
+  50%{
+      transform: scale(1.1);
+  }
+}

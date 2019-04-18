@@ -1,0 +1,28 @@
+div{
+  font-family: 'Arial';
+  background-color: #a8cf45;
+  margin: 15px 20px;
+  position: relative;
+  padding: 5px 20px;
+  text-align: center;
+  font-weight: bolder;
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.chicle:hover{
+  -webkit-animation: 0.7s chicle 1;
+}
+
+@keyframes chicle{
+  30%{
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  50%{
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  60%{
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+}

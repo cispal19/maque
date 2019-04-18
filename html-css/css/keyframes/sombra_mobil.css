@@ -1,0 +1,53 @@
+div{
+  position: relative;
+  width: 100px;
+  background: #a8cf45;
+  margin: 20px 30px;
+  padding: 20px 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+.sombra:hover{
+  transform: translateY(-6px);
+  animation: 1.5s movercaja infinite;
+}
+.sombra{
+
+  transform: translateX(0);
+
+
+}
+@keyframes movercaja {
+  50%{
+    transform: translateY(3px);
+  }
+
+}
+
+.sombra:before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 90%;
+  left: 5%;
+  height: 10px;
+  background: -webkit-radial-gradient(ellipse,
+    rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0) 80%
+    );
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+
+.sombra:hover:before{
+  opacity: 0.4;
+  transform: translateY(6px);
+    animation: 1.5s moversombra infinite;
+}
+@keyframes moversombra {
+  50%{
+    opacity: 1;
+    transform: translateY(3px)
+
+  }
+
+}

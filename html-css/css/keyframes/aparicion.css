@@ -1,0 +1,60 @@
+div.aparicion{
+  font-family: 'Arial';
+  background-color: #a8cf45;
+  margin: 50px 0 0 20px;
+  position: relative;
+  text-align: center;
+  font-weight: bolder;
+  width: 120px;
+  height: 60px;
+  overflow: hidden;
+
+
+
+}
+
+.aparicion{
+  -webkit-animation: 2s fade 1;
+
+}
+p{
+  position:absolute;
+  top: 10%;
+  left: 20%
+}
+.tapa{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: white;
+  z-index: 10;
+left: 120px;
+  animation: 1s ocultar 1;
+}
+
+
+/*fade*/
+@keyframes ocultar{
+  0%{
+    opacity: 0;
+      left: 0px;
+  }
+
+
+}
+
+/*
+@keyframes fade{
+  0%{
+    opacity: 0;
+
+  }
+  50%{
+    opacity: 0.2;
+
+  }
+
+
+}
+
+  }*/

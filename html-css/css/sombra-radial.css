@@ -1,0 +1,46 @@
+div{
+    width: 100px;
+    height: 100px;
+    background: #a8cf45;
+    margin: 10px 10px;
+    font-family:'Arial';
+    text-align: center;
+    font-weight: bold;
+    padding: 25px 30px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+
+
+}
+
+.radial:before,
+.radial:after{
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 5px;
+  left: 5%;
+  transition-duration: 0.3s;
+}
+
+.radial:before{
+  bottom: 100%;
+  background: radial-gradient(ellipse at 50% 150%,
+                              rgba(0, 0, 0, 0.5) 0%,
+                              rgba(0,0,0,0) 80%);
+opacity: 0;
+}
+
+.radial:after{
+  top: 100%;
+  background: radial-gradient(ellipse at 50% -50%,
+                              rgba(0, 0, 0, 0.5) 0%,
+                              rgba(0,0,0,0) 80%);
+                              opacity: 0;
+}
+
+.radial:hover:after,
+.radial:hover:before{
+  opacity: 1;
+}

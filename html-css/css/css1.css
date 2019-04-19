@@ -1,0 +1,11 @@
+.formulario{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background: orange;
+    margin: 50px;
+    box-shadow: inset 10px 10px 0px red;
+    box-shadow: inset 20px 0px 0px blue;
+
+}
+

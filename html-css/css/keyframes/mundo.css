@@ -1,0 +1,22 @@
+body{
+  background: #fff;
+}
+
+.mundo{
+  width: 92px;
+  height: 92px;
+  margin: 100px;
+  border-radius: 50%;
+  background: url("/img/mapa.png");
+  box-shadow: 0px 5px 15px #888;
+  animation: 10s rotar infinite linear;
+}
+
+@keyframes rotar{
+  0%{
+    background-position: 0px 0px;
+  }
+  100%{
+    background-position: -160px 0px;
+  }
+}

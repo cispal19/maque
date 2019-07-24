@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/rueda.css">
+    <title>rueda</title>
+  </head>
+  <body>
+    <div id="content">
+      
+      <div id="hora1" class="rueda">
+      
+      </div>
+      <div id="hora2" class="rueda">
+        
+      </div>
+      <div id="minuto1" class="rueda">
+      
+      </div>
+      <div id="minuto2" class="rueda">
+        
+      </div>
+      
+      <div id="seconds1" class="rueda">
+        
+      </div>
+      
+      <div id="seconds2" class="rueda">
+      
+      </div>
+      
+      
+      
+    </div>
+    
+    <script>
+      function llenarRueda(rueda, inicio, limite){
+        var ruedaReloj = document.getElementById(rueda);
+        cadena = "";
+        for(i=inicio; i<10; i++){
+          cadena = cadena + "<div class='card c"+i+"'>"
+          if (i<= limite) cadena = cadena +i;
+          cadena = cadena +"</div>";
+        }
+        
+        for(i=0; i<inicio; i++){
+          cadena = cadena + "<div class='card c"+i+"'>"
+          if (i<= limite) cadena = cadena +i;
+          cadena = cadena +"</div>";
+        }
+        ruedaReloj.innerHTML = cadena;
+      }
+      
+      var time = new Date();
+      var horas1 = time.getHours();
+      while(horas1 %10 != 0) horas1--;
+      horas1 = horas1 /10;
+      llenarRueda("hora1",horas1,2);
+      var horas2 = time.getHours();
+      horas2 = horas2 -(horas1*10);
+      llenarRueda("hora2",horas2,9);
+
+      var minuto1 = time.getMinutes();
+      while(minuto1 %10 != 0) minuto1--;
+      minuto1 = minuto1 /10;
+      llenarRueda("minuto1",minuto1,5);
+      var minuto2 = time.getMinutes();
+      minuto2 = minuto2 -(minuto1*10);
+      llenarRueda("minuto2",minuto2,9);
+      
+      var seconds1 = time.getSeconds();
+      while(seconds1 %10 != 0) seconds1--;
+      seconds1 = seconds1 /10;
+      llenarRueda("seconds1",seconds1,5);
+      var seconds2 = time.getSeconds();
+      seconds2 = seconds2 -(seconds1*10);
+      llenarRueda("seconds2",seconds2,9);
+      
+      
+    </script>
+    
+    
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,41 @@
+div{
+  position: relative;
+  width: 100px;
+  background: #a8cf45;
+  margin: 20px 30px;
+  padding: 20px 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+.arrow:before{
+  content: '';
+  position: absolute;
+  left: 5px;
+  top:25px;
+  border: 20px solid;
+  border-color: transparent #a8cf45
+                transparent
+                transparent;
+  border-width: 15px 15px 15px 0;
+  transition-duration: 0.3s;
+}
+
+.arrow:hover:before{
+  animation: 1s moverflecha infinite;
+}
+
+@keyframes moverflecha{
+  25%{
+    left: -15px;
+    transform: rotate(0deg);
+  }
+  65%{
+    left: -15px;
+    transform: rotate(180deg);
+  }
+
+  90%{
+  
+    transform: rotate(180deg);
+  }
+}

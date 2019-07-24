@@ -1,0 +1,67 @@
+div{
+  position: relative;
+  width: 100px;
+  background: #a8cf45;
+  margin: 20px 30px;
+  padding: 20px 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+.giro3d{
+  animation: 1.5s giro3d infinite;
+  backface-visibility: visible;
+}
+
+@keyframes giro3d{
+  40%{
+
+    transform: perspective(300px)
+                translateZ(120px)
+                rotateY(170deg);
+  }
+  50%{
+
+    transform: perspective(300px)
+                translateZ(120px)
+                rotateY(190deg);
+  }
+  80%{
+
+    transform: perspective(300px)
+                translateZ(0px)
+                rotateY(360deg);
+  }
+  100%{
+
+    transform: perspective(300px)
+                rotateY(360deg);
+  }
+
+}
+
+/*
+.girox{
+  animation: 1.5s girox 1;
+}
+
+@keyframes girox{
+  0%{
+    opacity: 0.5;
+    transform: perspective(200px)
+                rotateX(90deg);
+  }
+  40%{
+
+    transform: perspective(200px)
+                rotateX(-20deg);
+  }
+  70%{
+
+    transform: perspective(200px)
+                rotateX(20deg);
+  }
+
+}
+
+
+*/
